@@ -1,0 +1,22 @@
+<html>
+  <body>
+    <h1>How good are cats</h1>
+    <p>gonna tell you about my cats</p>
+    <table>
+      <tr>
+        <th>Name</th><th>Colour</th><th>Weight</th><th>Temperament</th>
+      </tr>
+      <% @cats.each do |cat| %>
+        <tr>
+          <td><%= cat.name %></td><td><%= cat.colour %></td><td><%= cat.weight_kgs %></td><td><%= cat.temperament %></td>
+        </tr>
+      <% end %>
+    </table>
+
+
+    <div class="fott">
+      add a cat!
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<% if @error %>
+  <h3><%= @error %></h3>
+<%end%>
+
+  <form temperament='POST' action='/cats'>
+    <label for="name">name</label>
+    <input type="text" name="name">
+
+    <label for="colour">colour</label>
+    <textarea name="colour"></textarea>
+
+    <label for="weight">weight</label>
+    <textarea name="weight"></textarea>
+
+    <label for="temperament">How to Cook</label>
+    <textarea name="temperament"></textarea>
+
+    <input type="submit" value="Submit">
+  </form>
+
+<%end%>
